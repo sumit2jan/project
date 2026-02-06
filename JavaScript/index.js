@@ -10,14 +10,14 @@ const roseContainer = document.querySelector(".roses");
 const letterBox = document.getElementById("letter");
 
 /* ================== AUTO OPEN ROSE DAY (FEB 7) ================== */
-(function autoRoseDay() {
-    const today = new Date();
-    if (today.getDate() === 7 && today.getMonth() === 1) {
-        screens[currentScreen].classList.remove("active");
-        currentScreen = 5; // Rose Day screen index
-        screens[currentScreen].classList.add("active");
-    }
-})();
+// (function autoRoseDay() {
+//     const today = new Date();
+//     if (today.getDate() === 7 && today.getMonth() === 1) {
+//         screens[currentScreen].classList.remove("active");
+//         currentScreen = 5; // Rose Day screen index
+//         screens[currentScreen].classList.add("active");
+//     }
+// })();
 
 /* ================== SCREEN NAVIGATION ================== */
 function nextScreen() {
