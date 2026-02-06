@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Pookie Ji 🌹</title>
+    <link rel="stylesheet" href="./CSS/style.css">
+</head>
+
+<body>
+
+    <audio id="bgMusic" src="music.mp3" loop></audio>
+
+    <div class="container">
+
+        <!-- Screen 1 -->
+        <div class="screen active">
+            <h1>Hey Pookie❤️</h1>
+            <p>I have made something special for you  (Sound On Karlena)</p>
+            <button onclick="nextScreen()">Press This 💕</button>
+        </div>
+
+        <!-- Screen 2 -->
+        <div class="screen">
+            <h1>You are precious ✨</h1>
+            <p>Every moment with you feels magical 🌸</p>
+            <button onclick="nextScreen()">Next 💖</button>
+        </div>
+
+        <!-- Screen 3 -->
+        <div class="screen">
+            <h1>Just one question 🥰</h1>
+            <p>From my heart to yours ❤️</p>
+            <button onclick="nextScreen()">Click This If u are ready 😍</button>
+        </div>
+
+        <!-- Screen 4 -->
+        <div class="screen">
+            <h1>Will you be my Valentine? 💘</h1>
+            <div class="buttons">
+                <button id="yesBtn">Yes 💖</button>
+                <button id="noBtn">No 🙈</button>
+            </div>
+        </div>
+
+        <!-- Screen 5 -->
+        <div class="screen celebration">
+            <h1>Yayyyy 💕</h1>
+            <p>You made me the happiest 🥹❤️</p>
+            <button onclick="nextScreen()">One more surprise 🌹</button>
+        </div>
+
+        <!-- Screen 6 : Rose Day -->
+        <div class="screen rose-day">
+            <h1>Happy Rose Day 🌹</h1>
+            <p>Anmol, every rose reminds me of you</p>
+            <p>Beautiful, gentle, and full of love 💕</p>
+            <button onclick="startRoseDay()">For You 🌹</button>
+        </div>
+
+        <!-- Handwritten Letter Screen -->
+        <div class="screen handwritten">
+            <h1>A Note for You 💌</h1>
+            <div id="letter"></div>
+            <button onclick="nextScreen()">After note click this❤️</button>
+        </div>
+
+
+        <!-- Screen 7 : Personal Message -->
+        <div class="screen final-message">
+            <h1>For You, Anmol ❤️</h1>
+            <p>
+                Just like these roses,<br>
+                my feelings for you never stop falling 🌹<br><br>
+                Thank you for being you.<br>
+                Happy Rose Day & Valentine’s 💕
+            </p>
+        </div>
+
+    </div>
+
+    <div class="hearts"></div>
+    <div class="roses"></div>
+
+    <script src="./JavaScript/index.js"></script>
+</body>
+
+</html>

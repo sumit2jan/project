@@ -1,0 +1,149 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.container {
+    width: 90%;
+    max-width: 360px;
+    background: white;
+    border-radius: 22px;
+    padding: 30px 20px;
+    text-align: center;
+    box-shadow: 0 20px 35px rgba(0,0,0,0.25);
+    z-index: 2;
+}
+
+.screen {
+    display: none;
+    animation: fadeIn 0.8s ease;
+}
+
+.screen.active {
+    display: block;
+}
+
+h1 {
+    color: #ff4d6d;
+    margin-bottom: 15px;
+}
+
+p {
+    color: #555;
+    margin-bottom: 25px;
+    line-height: 1.5;
+}
+
+button {
+    padding: 12px 22px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 30px;
+    background: #ff4d6d;
+    color: white;
+    cursor: pointer;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-around;
+    gap: 15px;
+}
+
+#noBtn {
+    background: #eee;
+    color: #333;
+    position: relative;
+}
+
+.celebration {
+    animation: pop 1s infinite alternate;
+}
+
+.final-message h1 {
+    color: #c9184a;
+}
+
+.rose-day h1 {
+    color: #c9184a;
+}
+
+/* Hearts */
+.hearts, .roses {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+.heart {
+    position: absolute;
+    bottom: -20px;
+    font-size: 20px;
+    animation: float 6s linear infinite;
+}
+
+.rose {
+    position: absolute;
+    top: -40px;
+    font-size: 28px;
+    animation: roseFall linear infinite;
+}
+
+@keyframes float {
+    0% { transform: translateY(0); opacity: 1; }
+    100% { transform: translateY(-100vh); opacity: 0; }
+}
+
+@keyframes roseFall {
+    0% { transform: translateY(0) rotate(0deg); opacity: 1; }
+    100% { transform: translateY(110vh) rotate(360deg); opacity: 0.8; }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes pop {
+    from { transform: scale(1); }
+    to { transform: scale(1.05); }
+}
+
+/* Handwritten letter */
+.handwritten h1 {
+    color: #c9184a;
+}
+
+#letter {
+    font-family: 'Comic Sans MS', 'Segoe Script', cursive;
+    font-size: 1.1rem;
+    color: #444;
+    background: #fff7f9;
+    padding: 20px;
+    border-radius: 15px;
+    min-height: 160px;
+    box-shadow: inset 0 0 10px rgba(0,0,0,0.05);
+    line-height: 1.6;
+    text-align: left;
+}
+@keyframes pulse {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.15);
+    }
+}
